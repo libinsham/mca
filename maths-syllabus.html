@@ -2,272 +2,217 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> MCA Semester 1 – Maths Syllabus</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCA Semester I – Mathematical Foundations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    /* Subject icons */
+    .subject img {
+      max-width: 80px;
+    }
+
+    /* Desktop hover dropdown only */
+    @media (min-width: 992px) {
+      .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* Mobile text scaling */
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER & NAVBAR ================= -->
-<header class="center-text">
-
+<!-- ================= NAVBAR ================= -->
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-  <a class="navbar-brand text-white" href="index.html">
-    <img src="./images/fddi_logo.jpg" width="30%">
-  </a>
+  <a class="navbar-brand text-white" href="index.html">MCA PORTAL</a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item active">
-        <a class="nav-link text-white" href="index.html">Home</a>
-      </li>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
 
       <li class="nav-item">
-        <a class="nav-link text-white" href="videos.html">Videos</a>
+        <a class="nav-link text-white" href="index.html">Home</a>
       </li>
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" data-toggle="dropdown">
           Subjects
         </a>
-
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="maths.html">Mathematical Foundations</a>
-          <a class="dropdown-item" href="networking.html">Networking & Communication</a>
-          <a class="dropdown-item" href="software-testing.html">Software Testing</a>
-          <a class="dropdown-item" href="dsap.html">DS & Algorithms (Python)</a>
-          <a class="dropdown-item" href="data-exploration.html">Data Exploration</a>
+          <a class="dropdown-item" href="maths.html">MCA Maths</a>
           <a class="dropdown-item" href="java.html">Advanced Java</a>
+          <a class="dropdown-item" href="networking.html">Networking</a>
+          <a class="dropdown-item" href="software-testing.html">Software Testing</a>
         </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="videos.html">Videos</a>
       </li>
 
     </ul>
   </div>
 </nav>
 
-<div class="mt-4">
+<!-- ================= HEADER ================= -->
+<header class="text-center my-4">
   <h1>Master of Computer Applications</h1>
-  <h4 class="text-primary">1st Year – 1st Semester</h4>
-
-  <h1>Syllabus - MATHS</h1>
-</div>
-
+  <h4 class="text-primary">Semester I – Mathematical Foundations</h4>
 </header>
 
-<!-- ================= SUBJECT ICONS ================= -->
-<section class="container mt-4">
+<!-- ================= SUBJECT ICON GRID ================= -->
+<section class="container">
+  <div class="row justify-content-center text-center">
 
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/maths.jpg" class="img-fluid">
+        <p>Maths</p>
+      </div>
+    </div>
 
-    <div class="container mt-5 text-center">
-        
-        <div class="row">
-          
-            
-           <div class=" subject ">
-           
-            <a href="question_paper.html">
-                <img src="./images/image_icon_1.png"> 
-                    <h3>  Question Paper </h3>
-            </a>
-          </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/java.png" class="img-fluid">
+        <p>Java</p>
+      </div>
+    </div>
 
-<!-- sdfsd-->
-         <div class=" subject ">
-           
-            <a href="question_paper.html">
-                <img src="./images/image_icon_1.png"> 
-                    <h3>  Question Paper </h3>
-            </a>
-          </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/network.jpg" class="img-fluid">
+        <p>Networking</p>
+      </div>
+    </div>
 
-            
-           <div class=" subject ">
-           
-            <a href="question_paper.html">
-                <img src="./images/image_icon_1.png"> 
-                    <h3>  Question Paper </h3>
-            </a>
-          </div>
+     <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/network.jpg" class="img-fluid">
+        <p>Networking</p>
+      </div>
+    </div>
 
-          
-          
-          <div class=" subject ">
-           
-            <a href="question_paper.html">
-                <img src="./images/image_icon_1.png"> 
-                    <h3>  Question Paper </h3>
-            </a>
-          </div>
+     <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/network.jpg" class="img-fluid">
+        <p>Networking</p>
+      </div>
+    </div>
 
-        </div>
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/sta.jpg" class="img-fluid">
+        <p>Software Testing</p>
+      </div>
+    </div>
 
-      
-          
-        
-        <div class="row">    
-            <div class=" subject">
-                <a href="download.html">
-                <img src="./images/image_icon_1.png">
-                <h3>   Download </h3>
-                </a>
-          </div>
+  </div>
+</section>
 
-          
-            <div class=" subject">
-                <a href="download.html">
-                <img src="./images/image_icon_1.png">
-                <h3>   Download </h3>
-                </a>
-          </div>
+<!-- ================= SYLLABUS TABLE ================= -->
+<section class="container my-4">
 
-          
-            <div class=" subject">
-                <a href="download.html">
-                <img src="./images/image_icon_1.png">
-                <h3>   Download </h3>
-                </a>
-          </div>
-          
-          
-          <div class=" subject ">
-           
-            <a href="question_paper.html">
-                <img src="./images/image_icon_1.png"> 
-                    <h3>  Question Paper </h3>
-            </a>
-          </div>
+  <h3 class="text-center mb-3"> Mathematical Foundations for Computer Applications</h3>
 
-          </div>
+  <h3 class="text-center mb-3">  SYLLABUS  </h3>
 
-        </div>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Unit</th>
+          <th>Title</th>
+          <th>Topics</th>
+        </tr>
+      </thead>
 
+      <tbody>
+        <!-- UNIT I -->
+        <tr>
+          <td>I</td>
+          <td>Relations & Functions</td>
+          <td>
+            <h6><b>Relations</b></h6>
+            <ul>
+              <li>Properties of Binary Relations</li>
+              <li>Equivalence Relations</li>
+              <li>Transitive Closure</li>
+              <li>Compatibility & Partial Ordering Relations</li>
+            </ul>
 
-    </section>
+            <h6><b>Functions</b></h6>
+            <ul>
+              <li>Inverse Functions</li>
+              <li>Composition of Functions</li>
+              <li>Recursive Functions</li>
+            </ul>
 
-<!-- ================= SYLLABUS CONTENT ================= -->
-<section class="container mt-4">
+            <h6><b>Lattices</b></h6>
+            <ul>
+              <li>Lattices</li>
+              <li>Hasse Diagram</li>
+              <li>Properties of Lattices</li>
+            </ul>
+          </td>
+        </tr>
 
-<h3 class="text-center mb-4 mt-5">
-  Mathematical Foundations for Computer Applications
-</h3>
+        <!-- UNIT II -->
+        <tr>
+          <td>II</td>
+          <td>Logic</td>
+          <td>
+            <ul>
+              <li>Propositional Logic</li>
+              <li>Logical Connectives</li>
+              <li>Truth Tables</li>
+              <li>Normal Forms (PCNF & PDNF)</li>
+              <li>Predicate Logic</li>
+              <li>Quantifiers</li>
+              <li>Proof Techniques & Mathematical Induction</li>
+            </ul>
+          </td>
+        </tr>
 
-<h5>Course Objectives</h5>
-<ol>
- <li>To apply fundamental concepts of discrete mathematics in the context of computer
-science and software development. </li> <li>
-To develop the ability to model and solve computational problems using
-mathematical tools such as combinatorics, matrices, graph theory, and number
-theory.</li><li>
-To enhance analytical and logical thinking skills necessary for designing algorithms,
-analyzing complexity, and supporting various applications in computer science.
-
-</li>
-</ol>
-
-<table class="table table-bordered table-striped mt-4">
-  <thead class="thead-dark">
-    <tr>
-      <th>Unit</th>
-      <th>Topic</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>I</td>
-      <td>Relations & Functions</td>
-      <td>
-        <ul>
-      <ul>
-      <h5>  <b> Relations:  </b>  </h5>  
-  <li>Properties of Binary Relations</li>
-  <li>Equivalence Relations</li>
-  <li>Transitive Closure</li>
-  <li>Compatibility Relations</li>
-  <li>Partial Ordering Relations</li>
-  <br>
-
-  <h5>  <b> Functions:  </b>  </h5>  
-  <li>Inverse Functions</li>
-  <li>Composition of Functions</li>
-  <li>Recursive Functions</li>
-  <br>
-
-
-  <h5>  <b> Lattices:  </b>  </h5>  
-
-  <li>Lattices</li>
-  <li>Hasse Diagram</li>
-  <li>Properties of Lattices</li>
-</ul>
-        </ul>
-      </td>
-    </tr>
-
-
-    <tr>
-  <td>II</td>
-  <td>Propositional & Predicate Logic</td>
-  <td>
-
-    <h5><b>Propositional Logic:</b></h5>
-    <ul>
-      <li>Propositional Logic</li>
-      <li>Logical Connectives</li>
-      <li>Truth Tables</li>
-      <li>Normal Forms (PCNF & PDNF)</li>
-    </ul>
-
-    <h5><b>Predicate Logic:</b></h5>
-    <ul>
-      <li>Predicate Logic</li>
-      <li>Universal Quantifiers</li>
-      <li>Existential Quantifiers</li>
-    </ul>
-
-    <h5><b>Proof Techniques:</b></h5>
-    <ul>
-      <li>Proof Techniques</li>
-      <li>Direct Proof</li>
-      <li>Indirect Proof</li>
-      <li>Proof by Contradiction</li>
-      <li>Mathematical Induction</li>
-    </ul>
-
-  </td>
-</tr>
-
-
- <tr>
+        <tr>
   <td>III</td>
   <td>Recurrence Relation & Generating Function</td>
   <td>
 
-    <h5><b>Generating Functions:</b></h5>
+    <h6><b>Generating Functions</b></h6>
     <ul>
       <li>Generating Functions</li>
       <li>Functions of Sequences</li>
       <li>Calculating Coefficients of Generating Functions</li>
     </ul>
 
-    <h5><b>Recurrence Relations:</b></h5>
+    <h6><b>Recurrence Relations</b></h6>
     <ul>
       <li>Recurrence Relations</li>
       <li>Solving Recurrence Relations by Substitution</li>
       <li>Solving Recurrence Relations using Generating Functions</li>
     </ul>
 
-    <h5><b>Characteristic Roots:</b></h5>
+    <h6><b>Characteristic Roots</b></h6>
     <ul>
       <li>Characteristic Roots Method</li>
       <li>Solution of Inhomogeneous Recurrence Relations</li>
@@ -277,33 +222,27 @@ analyzing complexity, and supporting various applications in computer science.
 </tr>
 
 
-  <tr>
+<tr>
   <td>IV</td>
   <td>Graph Theory</td>
   <td>
 
-    <h5><b>Basic Terminology:</b></h5>
+    <h6><b>Basic Terminology & Types of Graphs</b></h6>
     <ul>
-      <li>Basic Terminology of Graphs</li>
       <li>Directed and Undirected Graphs</li>
-      <li>Simple Graphs</li>
-      <li>Pseudo Graphs</li>
-      <li>Complete Graphs</li>
-      <li>Regular Graphs</li>
-      <li>Bipartite Graphs</li>
+      <li>Simple, Pseudo, Complete, Regular, Bipartite Graphs</li>
     </ul>
 
-    <h5><b>Vertices and Edges:</b></h5>
+    <h6><b>Vertices & Edges</b></h6>
     <ul>
-      <li>Incidence and Degree of a Vertex</li>
-      <li>Pendant Vertex</li>
-      <li>Isolated Vertex</li>
+      <li>Incidence and Degree</li>
+      <li>Pendant and Isolated Vertex</li>
       <li>Null Graph</li>
     </ul>
 
-    <h5><b>Graph Properties:</b></h5>
+    <h6><b>Graph Properties</b></h6>
     <ul>
-      <li>Isomorphism of Graphs</li>
+      <li>Isomorphism</li>
       <li>Subgraphs</li>
       <li>Walk, Path, and Circuit</li>
       <li>Connected and Disconnected Graphs</li>
@@ -311,7 +250,7 @@ analyzing complexity, and supporting various applications in computer science.
       <li>Operations on Graphs</li>
     </ul>
 
-    <h5><b>Special Graphs and Algorithms:</b></h5>
+    <h6><b>Special Graphs & Algorithms</b></h6>
     <ul>
       <li>Euler Graphs</li>
       <li>Fleury’s Algorithm</li>
@@ -319,9 +258,8 @@ analyzing complexity, and supporting various applications in computer science.
       <li>Traveling Salesman Problem (TSP)</li>
     </ul>
 
-    <h5><b>Graph Representation:</b></h5>
+    <h6><b>Graph Representation</b></h6>
     <ul>
-      <li>Matrix Representation of Graphs</li>
       <li>Incidence Matrix</li>
       <li>Adjacency Matrix</li>
     </ul>
@@ -329,20 +267,19 @@ analyzing complexity, and supporting various applications in computer science.
   </td>
 </tr>
 
-    <tr>
+
+<tr>
   <td>V</td>
   <td>Grammars and Automata</td>
   <td>
 
-    <h5><b>Fundamental Concepts:</b></h5>
+    <h6><b>Fundamental Concepts</b></h6>
     <ul>
-      <li>Alphabets</li>
-      <li>Strings</li>
-      <li>Languages</li>
+      <li>Alphabets, Strings, and Languages</li>
       <li>Automata and Grammars</li>
     </ul>
 
-    <h5><b>Deterministic Finite Automata (DFA):</b></h5>
+    <h6><b>Deterministic Finite Automata (DFA)</b></h6>
     <ul>
       <li>Formal Definition of DFA</li>
       <li>State Transition Graph</li>
@@ -350,14 +287,14 @@ analyzing complexity, and supporting various applications in computer science.
       <li>Language of DFA</li>
     </ul>
 
-    <h5><b>Nondeterministic Finite Automata (NFA):</b></h5>
+    <h6><b>Nondeterministic Finite Automata (NFA)</b></h6>
     <ul>
-      <li>Nondeterministic Finite Automata (NFA)</li>
+      <li>NFA</li>
       <li>NFA with ε (Epsilon) Transitions</li>
       <li>Language of NFA</li>
     </ul>
 
-    <h5><b>Finite Automata Properties:</b></h5>
+    <h6><b>Finite Automata Properties</b></h6>
     <ul>
       <li>Equivalence of NFA and DFA</li>
       <li>Minimization of Finite Automata</li>
@@ -366,94 +303,16 @@ analyzing complexity, and supporting various applications in computer science.
   </td>
 </tr>
 
-<h4 class="mt-4">References</h4>
 
-<table class="table table-bordered table-striped">
-  <thead class="thead-dark">
-    <tr>
-      <th>S.No</th>
-      <th>Reference Details</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>
-        Trembly, J. P., & Manohar, R. (2017). 
-        <i>Discrete Mathematical Structures with Applications to Computer Science</i> 
-        (International ed.). Tata McGraw-Hill.
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>
-        Rosen, K. H. (2017). 
-        <i>Discrete Mathematics and Its Applications</i> (7th ed.). McGraw-Hill.
-      </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>
-        Deo, N. (2016). 
-        <i>Graph Theory with Applications to Engineering and Computer Science</i>. 
-        Prentice Hall.
-      </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>
-        Hopcroft, J. E., & Ullman, J. D. (2006). 
-        <i>Introduction to Automata Theory, Languages, and Computation</i> 
-        (3rd ed.). Pearson Education.
-      </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>
-        Sharma, J. K. (2011). 
-        <i>Discrete Mathematics</i> (3rd ed.). Macmillan Publishers India.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-<h4 class="mt-4">E-Resources</h4>
-
-<table class="table table-bordered table-striped">
-  <thead class="thead-dark">
-    <tr>
-      <th>S.No</th>
-      <th>Resource Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>
-        <a href="https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/" 
-           target="_blank">
-          MIT OpenCourseWare – Mathematics for Computer Science
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>
-        <a href="https://teachyourselfcs.com/" target="_blank">
-          Teach Yourself Computer Science
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-  </tbody>
-</table>
-
+      </tbody>
+    </table>
+  </div>
 </section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-3 bg-dark text-white">
+  © 2025 MCA Academic Portal
+</footer>
 
 <!-- ================= BOOTSTRAP JS ================= -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
