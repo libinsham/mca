@@ -83,7 +83,7 @@
 
     <div class="col-6 col-md-4 col-lg-2 mb-4">
       <div class="subject">
-        <a href="#syllabus">
+        <a href="syllabus.html#syllabus">
         <img src="images/syllabus_icon.png" class="img-fluid">
         <p>Syllabus</p>
         </a>
@@ -92,8 +92,11 @@
 
     <div class="col-6 col-md-4 col-lg-2 mb-4">
       <div class="subject">
+          <a href="#syllabus">
         <img src="images/notes_icon.png" class="img-fluid">
+
         <p> Notes</p>
+        </a>
       </div>
     </div>
 
@@ -185,204 +188,239 @@
 
 
 <!-- ================= SYLLABUS TABLE ================= -->
-<section id="syllabus" class="container my-4">
+<section id="syllabus" class="container mt-4">
 
-  <h3 class="text-center mb-3"> Mathematical Foundations for Computer Applications</h3>
+  <h2 class="text-center mb-3">
+    MCA 1st Year – 1st Semester
+  </h2>
 
-  <h3 class="text-center mb-3">  SYLLABUS  </h3>
+  <h3 class="text-center text-primary mb-4">
+    Mathematical Foundation for Computer Applications
+  </h3>
 
-  <div class="table-responsive">
-    <table class="table table-bordered table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th>Unit</th>
-          <th>Title</th>
-          <th>Topics</th>
-        </tr>
-      </thead>
+   <h2 class="text-center mb-3">
+    Notes
+  </h2>
+  <p class="text-center">
+    <b>Strictly as per syllabus & prescribed references: Trembly, Rosen, Deo, Hopcroft, Sharma)</b>
+  </p>
 
-      <tbody>
-        <!-- UNIT I -->
-        <tr>
-          <td>I</td>
-          <td>Relations & Functions</td>
-          <td>
-            <h6><b>Relations</b></h6>
-            <ul>
-              <li>Properties of Binary Relations</li>
-              <li>Equivalence Relations</li>
-              <li>Transitive Closure</li>
-              <li>Compatibility & Partial Ordering Relations</li>
-            </ul>
+  <hr>
 
-            <h6><b>Functions</b></h6>
-            <ul>
-              <li>Inverse Functions</li>
-              <li>Composition of Functions</li>
-              <li>Recursive Functions</li>
-            </ul>
+  <!-- ================= UNIT I ================= -->
+  <h4>UNIT I – RELATIONS, FUNCTIONS & LATTICES</h4>
 
-            <h6><b>Lattices</b></h6>
-            <ul>
-              <li>Lattices</li>
-              <li>Hasse Diagram</li>
-              <li>Properties of Lattices</li>
-            </ul>
-          </td>
-        </tr>
+  <h5>Binary Relation</h5>
+  <p>
+    A relation <b>R</b> from <b>A</b> to <b>B</b> is a subset of <b>A × B</b>.
+  </p>
 
-        <!-- UNIT II -->
-       <tr>
-  <td>II</td>
-  <td>Propositional and Predicate Logic</td>
-  <td>
+  <p><b>Example:</b></p>
+  <p>
+    A = {1,2}, B = {a,b}<br>
+    A × B = {(1,a),(1,b),(2,a),(2,b)}<br>
+    R = {(1,a),(2,b)} is a relation.
+  </p>
 
-    <h6><b>Propositional Logic</b></h6>
-    <ul>
-      <li>Propositional Logic</li>
-      <li>Logical Connectives</li>
-      <li>Truth Tables</li>
-    </ul>
+  <h5>Properties of Binary Relations</h5>
+  <ul>
+    <li><b>Reflexive:</b> (a,a) ∈ R for all a ∈ A</li>
+    <li><b>Symmetric:</b> (a,b) ∈ R ⇒ (b,a) ∈ R</li>
+    <li><b>Transitive:</b> (a,b),(b,c) ∈ R ⇒ (a,c)</li>
+    <li><b>Antisymmetric:</b> (a,b),(b,a) ∈ R ⇒ a = b</li>
+  </ul>
 
-    <h6><b>Normal Forms</b></h6>
-    <ul>
-      <li>Principal Conjunctive Normal Form (PCNF)</li>
-      <li>Principal Disjunctive Normal Form (PDNF)</li>
-    </ul>
+  <p><b>Example:</b></p>
+  <p>
+    R = {(1,1),(2,2),(1,2),(2,1)} is reflexive and symmetric.
+  </p>
 
-    <h6><b>Predicate Logic</b></h6>
-    <ul>
-      <li>Predicate Logic</li>
-      <li>Universal Quantifiers</li>
-      <li>Existential Quantifiers</li>
-    </ul>
+  <h5>Equivalence Relation</h5>
+  <p>
+    A relation that is <b>reflexive, symmetric, and transitive</b>.
+  </p>
 
-    <h6><b>Proof Techniques</b></h6>
-    <ul>
-      <li>Direct Proof</li>
-      <li>Indirect Proof</li>
-      <li>Proof by Contradiction</li>
-      <li>Mathematical Induction</li>
-    </ul>
+  <p><b>Solved Example:</b></p>
+  <p>
+    A = {1,2,3}<br>
+    R = {(1,1),(2,2),(3,3),(1,2),(2,1)}<br>
+    Reflexive ✔ Symmetric ✔ Transitive ✔<br>
+    ∴ R is an <b>Equivalence Relation</b>
+  </p>
 
-  </td>
-</tr>
+  <p><b>Equivalence Classes:</b></p>
+  <p>[1] = {1,2}, [2] = {1,2}, [3] = {3}</p>
 
+  <h5>Partial Ordering Relation</h5>
+  <p>
+    A relation that is <b>reflexive, antisymmetric, and transitive</b>.
+  </p>
 
-        <tr>
-  <td>III</td>
-  <td>Recurrence Relation & Generating Function</td>
-  <td>
+  <p><b>Example:</b></p>
+  <p>
+    A = {1,2,4}<br>
+    R = {(1,1),(2,2),(4,4),(1,2),(2,4),(1,4)}
+  </p>
 
-    <h6><b>Generating Functions</b></h6>
-    <ul>
-      <li>Generating Functions</li>
-      <li>Functions of Sequences</li>
-      <li>Calculating Coefficients of Generating Functions</li>
-    </ul>
+  <h5>Hasse Diagram</h5>
+  <p>
+    Graphical representation of a poset by removing transitive edges.
+  </p>
 
-    <h6><b>Recurrence Relations</b></h6>
-    <ul>
-      <li>Recurrence Relations</li>
-      <li>Solving Recurrence Relations by Substitution</li>
-      <li>Solving Recurrence Relations using Generating Functions</li>
-    </ul>
+  <h5>Lattice</h5>
+  <p>
+    A poset in which every pair has a <b>join (LUB)</b> and <b>meet (GLB)</b>.
+  </p>
 
-    <h6><b>Characteristic Roots</b></h6>
-    <ul>
-      <li>Characteristic Roots Method</li>
-      <li>Solution of Inhomogeneous Recurrence Relations</li>
-    </ul>
+  <p><b>Example:</b></p>
+  <p>({1,2,4}, divides) forms a lattice.</p>
 
-  </td>
-</tr>
+  <p><b>Properties of Lattice:</b></p>
+  <ul>
+    <li>Idempotent</li>
+    <li>Commutative</li>
+    <li>Associative</li>
+    <li>Absorption</li>
+  </ul>
 
+  <hr>
 
-<tr>
-  <td>IV</td>
-  <td>Graph Theory</td>
-  <td>
+  <!-- ================= UNIT II ================= -->
+  <h4>UNIT II – PROPOSITIONAL & PREDICATE LOGIC</h4>
 
-    <h6><b>Basic Terminology & Types of Graphs</b></h6>
-    <ul>
-      <li>Directed and Undirected Graphs</li>
-      <li>Simple, Pseudo, Complete, Regular, Bipartite Graphs</li>
-    </ul>
+  <h5>Propositional Logic</h5>
+  <p>
+    A proposition is a statement that is either <b>true or false</b>.
+  </p>
 
-    <h6><b>Vertices & Edges</b></h6>
-    <ul>
-      <li>Incidence and Degree</li>
-      <li>Pendant and Isolated Vertex</li>
-      <li>Null Graph</li>
-    </ul>
+  <p><b>Example:</b></p>
+  <p>
+    "2 + 3 = 5" (True)<br>
+    "5 is even" (False)
+  </p>
 
-    <h6><b>Graph Properties</b></h6>
-    <ul>
-      <li>Isomorphism</li>
-      <li>Subgraphs</li>
-      <li>Walk, Path, and Circuit</li>
-      <li>Connected and Disconnected Graphs</li>
-      <li>Graph Components</li>
-      <li>Operations on Graphs</li>
-    </ul>
+  <h5>Logical Connectives</h5>
+  <p>∧ (AND), ∨ (OR), ¬ (NOT), → (Implication), ↔ (Biconditional)</p>
 
-    <h6><b>Special Graphs & Algorithms</b></h6>
-    <ul>
-      <li>Euler Graphs</li>
-      <li>Fleury’s Algorithm</li>
-      <li>Hamiltonian Circuits and Paths</li>
-      <li>Traveling Salesman Problem (TSP)</li>
-    </ul>
+  <p><b>Example:</b></p>
+  <p>
+    p: It is raining<br>
+    q: I carry umbrella<br>
+    p → q : If it is raining, then I carry umbrella
+  </p>
 
-    <h6><b>Graph Representation</b></h6>
-    <ul>
-      <li>Incidence Matrix</li>
-      <li>Adjacency Matrix</li>
-    </ul>
+  <h5>Normal Forms</h5>
+  <ul>
+    <li><b>PCNF:</b> Conjunction of maxterms</li>
+    <li><b>PDNF:</b> Disjunction of minterms</li>
+  </ul>
 
-  </td>
-</tr>
+  <p><b>Predicate Logic</b></p>
+  <ul>
+    <li>∀x P(x) : For all x</li>
+    <li>∃x P(x) : There exists x</li>
+  </ul>
 
+  <p><b>Negation Rules:</b></p>
+  <ul>
+    <li>¬(∀xP(x)) = ∃x¬P(x)</li>
+    <li>¬(∃xP(x)) = ∀x¬P(x)</li>
+  </ul>
 
-<tr>
-  <td>V</td>
-  <td>Grammars and Automata</td>
-  <td>
+  <h5>Proof Techniques</h5>
+  <ul>
+    <li>Direct Proof</li>
+    <li>Indirect Proof</li>
+    <li>Proof by Contradiction</li>
+    <li>Mathematical Induction</li>
+  </ul>
 
-    <h6><b>Fundamental Concepts</b></h6>
-    <ul>
-      <li>Alphabets, Strings, and Languages</li>
-      <li>Automata and Grammars</li>
-    </ul>
+  <hr>
 
-    <h6><b>Deterministic Finite Automata (DFA)</b></h6>
-    <ul>
-      <li>Formal Definition of DFA</li>
-      <li>State Transition Graph</li>
-      <li>Transition Table</li>
-      <li>Language of DFA</li>
-    </ul>
+  <!-- ================= UNIT III ================= -->
+  <h4>UNIT III – RECURRENCE RELATIONS & GENERATING FUNCTIONS</h4>
 
-    <h6><b>Nondeterministic Finite Automata (NFA)</b></h6>
-    <ul>
-      <li>NFA</li>
-      <li>NFA with ε (Epsilon) Transitions</li>
-      <li>Language of NFA</li>
-    </ul>
+  <h5>Recurrence Relation</h5>
+  <p>
+    Defines a sequence using previous terms.
+  </p>
 
-    <h6><b>Finite Automata Properties</b></h6>
-    <ul>
-      <li>Equivalence of NFA and DFA</li>
-      <li>Minimization of Finite Automata</li>
-    </ul>
+  <p><b>Example:</b> Fibonacci Sequence</p>
+  <p>
+    F₀ = 0, F₁ = 1<br>
+    Fₙ = Fₙ₋₁ + Fₙ₋₂
+  </p>
 
-  </td>
-</tr>
+  <h5>Characteristic Roots Method</h5>
+  <p>
+    Yₙ₊₂ − 5Yₙ₊₁ + 6Yₙ = 0<br>
+    r² − 5r + 6 = 0 ⇒ r = 2,3<br>
+    Yₙ = A·2ⁿ + B·3ⁿ
+  </p>
 
+  <h5>Generating Functions</h5>
+  <p>
+    Power series representing sequences.
+  </p>
 
-      </tbody>
-    </table>
-  </div>
+  <p><b>Examples:</b></p>
+  <ul>
+    <li>{1,1,1,…} ⇒ 1/(1−x)</li>
+    <li>{1,2,3,…} ⇒ x/(1−x)²</li>
+  </ul>
+
+  <hr>
+
+  <!-- ================= UNIT IV ================= -->
+  <h4>UNIT IV – GRAPH THEORY</h4>
+
+  <h5>Types of Graphs</h5>
+  <ul>
+    <li>Directed, Undirected</li>
+    <li>Simple, Complete, Regular, Bipartite</li>
+  </ul>
+
+  <h5>Euler Graph</h5>
+  <p>
+    A connected graph with all vertices of even degree.
+  </p>
+
+  <h5>Traveling Salesman Problem</h5>
+  <p>
+    Minimum cost tour visiting all cities once (NP-Hard).
+  </p>
+
+  <hr>
+
+  <!-- ================= UNIT V ================= -->
+  <h4>UNIT V – GRAMMARS & AUTOMATA</h4>
+
+  <h5>DFA</h5>
+  <p>
+    Defined as a 5-tuple (Q, Σ, δ, q₀, F)
+  </p>
+
+  <h5>NFA & ε-NFA</h5>
+  <p>
+    Allows multiple transitions and ε-moves.
+  </p>
+
+  <h5>Minimization of Finite Automata</h5>
+  <p>
+    Reducing states without changing language.
+  </p>
+
+  <hr>
+
+  <!-- ================= EXAM STRATEGY ================= -->
+  <h4>🎯 HOW TO USE THESE NOTES FOR 80%</h4>
+  <ul>
+    <li>Master Units I, III, IV</li>
+    <li>Practice all solved examples</li>
+    <li>Draw diagrams neatly</li>
+    <li>Box final answers</li>
+  </ul>
+
 </section>
 
 <!-- ================= FOOTER ================= -->

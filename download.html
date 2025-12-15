@@ -1,88 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>MCA Semester I – Mathematical Foundations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    
-    
-    <title>  Book - 2D CAD Design  Foundation Batch   </title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
 
+    /* Subject icons */
+    .subject img {
+      max-width: 80px;
+    }
 
-<header class="center-text">
-   
+    /* Desktop hover dropdown only */
+    @media (min-width: 992px) {
+      .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* Mobile text scaling */
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand text-white" href="index.html">MCA PORTAL</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" data-toggle="dropdown">
+          Home
+        </a>
+        <div class="dropdown-menu">
         
-<div class="">
-    <img src="">
+        </div>
+      </li>
 
-    <h1>  <a href="index.html">Home </a>    </h1>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="videos.html">Videos</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= HEADER ================= -->
+<header class="text-center my-4">
+  <h1>Master of Computer Applications</h1>
+  <h4 class="text-primary">Semester I – Mathematical Foundations</h4>
+</header>
+
+<!-- ================= SUBJECT ICON GRID ================= -->
+<section class="container">
+  <div class="row justify-content-center text-center">
+
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <a href="#syllabus">
+        <img src="images/syllabus_icon.png" class="img-fluid">
+        <p>Syllabus</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+
+        <a href="maths-notes.html"  >
+
+        <img src="images/notes_icon.png" class="img-fluid">
+        <p> Notes</p>
+        </a>
+      </div>
+    </div>
+
+     <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/qaans_icon.png" class="img-fluid">
+        <p> Important Question and Answers</p>
+      </div>
     </div>
 
 
-<h1> Photoshop & Illustrator </h1>
 
-<div class="git remote add origin https://github.com/libinsham2/2DCAD.git">
-
-
-<h1> Download </h1>
-
-</div>
-
-        </header>
-
-<section>
-
-    <div class="container text-center">
-        
-        <div class="row">
-          
-            
-            <div class="col color ">
-
-                <img src="./images/image_icon_1.png">
-                 <h3> Adobe Notes </h3>
-
-            </div>
-
-            <div class="col color " >
-                <img src="./images/image_icon_1.png">
-                <h3>   Notes </h3>
-
-            </div>
-          
-            
-            <div class="col color " >
-                <img src="./images/image_icon_1.png">
-                <h3>  Adobe Master </h3>
-
-          </div>
-
-          <div class="col color " >
-                 <img src="./images/image_icon_1.png">
-                     <h3>  Question Paper  </h3>
-
-          </div>
-      
-          
-          
-          
-        </div>
-
-        
-
-        
-
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/formula_icon.png" class="img-fluid">
+        <p> Formula & Symbols </p>
       </div>
+    </div>
+
+   <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/qaans_icon.png" class="img-fluid">
+        <p>   Univeristy & Mockup Question Paper  </p>
+      </div>
+    </div>
 
 
-    </section>
+   <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/library_icons.png" class="img-fluid">
+        <p> Books Library </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Start the Menu   -->
+
+<!-- End the Menu   -->
+
+<section class="container">
+  <div class="row justify-content-center text-center">
+
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/quiz_icon.png" class="img-fluid">
+        <p> Quiz </p>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/quiz_icon.png" class="img-fluid">
+        <p> Problem Solving </p>
+      </div>
+    </div>
+
+     <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/ppt_icon.png" class="img-fluid">
+        <p> PPT Lesson </p>
+      </div>
+    </div>
 
 
-</head>
-<body>
-    
+
+      <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/video_icon.png" class="img-fluid">
+        <p> Video Tutorial  </p>
+      </div>
+    </div>
+
+   <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/download.png" class="img-fluid">
+        <p>  Download </p>
+      </div>
+    </div>
+
+
+   <div class="col-6 col-md-4 col-lg-2 mb-4">
+      <div class="subject">
+        <img src="images/image_icon_2.png" class="img-fluid">
+        <p>  Updating.....</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= SYLLABUS TABLE ================= -->
+<section id="syllabus" class="container my-4">
+
+  <h3 class="text-center mb-3"> Mathematical Foundations for Computer Applications</h3>
+
+  <h3 class="text-center mb-3">  DOWNLOAD  </h3>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Unit</th>
+          <th>Title</th>
+          <th>Topics</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- UNIT I -->
+
+
+        <tr>
+          <td>I</td>
+          <td> Short Important Notes </td>
+          <td>
+            <h6><b>Download</b></h6>
+          
+          </td>
+         </tr>
+
+           <tr>
+          <td>2</td>
+          <td> Class Notes </td>
+          <td>
+            <h6><b>Download</b></h6>
+          
+          </td>
+         </tr>
+
+           <tr>
+          <td>2</td>
+          <td> Internal Assessment - I</td>
+          <td>
+            <h6><b>Download</b></h6>
+          
+          </td>
+         </tr>
+
+             <tr>
+          <td>2</td>
+          <td> Internal Assessment - 2</td>
+          <td>
+            <h6><b>Download</b></h6>
+          
+          </td>
+         </tr>
+           <tr>
+          <td>2</td>
+          <td> Important Questions and Answers</td>
+          <td>
+            <h6><b>Download</b></h6>
+          
+          </td>
+         </tr>
+
+          <tr>
+          <td>2</td>
+          <td>University Questions Paper</td>
+          <td>
+            <h6><b>Download</b></h6>
+          
+          </td>
+         </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center py-3 bg-dark text-white">
+  © 2025 MCA Academic Portal
+</footer>
+
+<!-- ================= BOOTSTRAP JS ================= -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
