@@ -24,6 +24,17 @@
 }
 
 
+/* Show dropdown on hover */
+.navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+/* Optional: smooth hover */
+.dropdown-menu {
+  margin-top: 0;
+}
+
+
 .iframe-container {
   width: 100%;
   height: 90%; /* 90% of the viewport height */
@@ -60,7 +71,7 @@ iframe {
   padding: 50px;
   color: white;
   border-radius: 10px;
-  background-color: #9c94ff;
+  background-color: #4285f4;
   box-shadow: 10px 10px 5px #afafaf;
 }
 
@@ -85,6 +96,7 @@ border: 1px solid rgb(2, 9, 119);
 
 border-radius: 50%;
 margin: 5px;
+
 
 }
 
@@ -112,6 +124,47 @@ margin: 5px;
   border-radius: 10px;
   background-color: rgb(0, 207, 255);
 }
+
+.subject{
+
+  width: 100px;
+  height: 100px;
+  background-color: #4285f4;
+  padding: 15px;
+  margin: 15px 50px;
+  color: #000000;
+
+}
+
+.subject a{
+
+  color: #000000;
+}
+
+.subject img {
+  margin: 0px;
+  width: 150px;
+  height: 150px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(0, 207, 255);
+}
+
+.subject2{
+
+
+
+}
+
+.subject2 img {
+  margin: 0px;
+  width: 100px;
+  height: 100px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(0, 207, 255);
+}
+
 
 .colorblack img {
   margin: 0px;
@@ -190,7 +243,7 @@ a {
 
 .shapeboxes{
   width: 120px;;  /* Define a fixed width */
-  height: 100px; /* Define a fixed height */
+  height: 160px; /* Define a fixed height */
   padding: 10px; /* Optional padding */
   color: white; /* Make text visible */
   border-radius: 50%; /* Ensures circular shape */
@@ -206,6 +259,12 @@ a {
   font-size: 14px;
 }
 
+.subjectsfont p
+{
+
+  font-size: 50px;
+
+}
 
 .shapeimg img{
 
@@ -226,7 +285,7 @@ a {
 
 .navbar{
 
-background-color: #ecebf6 !important ;
+background-color: #4d3dff !important ;
 box-shadow: 1px 2px 1px 2px grey;
 }
 
