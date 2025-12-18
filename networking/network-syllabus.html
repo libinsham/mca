@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MCA Semester I – Networking and Communications </title>
+  <title>MCA Semester I – Mathematical Foundations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+<link>
   <style>
     body {
       background-color: #f8f9fa;
@@ -25,7 +25,15 @@
       }
     }
 
-   
+    /* Mobile text scaling */
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 
@@ -66,7 +74,7 @@
 <!-- ================= HEADER ================= -->
 <header class="text-center my-4">
   <h1>Master of Computer Applications</h1>
-  <h4 class="text-primary">Semester I – Networking and Communication System</h4>
+  <h4 class="text-primary">Semester I –  Networking </h4>
 </header>
 
 <!-- ================= SUBJECT ICON GRID ================= -->
@@ -75,7 +83,7 @@
 
     <div class="col-6 col-md-4 col-lg-2 mb-4">
       <div class="subject">
-        <a href="networking/network-syllabus.html#syllabus">
+        <a href="#syllabus">
         <img src="images/syllabus_icon.png" class="img-fluid">
         <p>Syllabus</p>
         </a>
@@ -85,7 +93,7 @@
     <div class="col-6 col-md-4 col-lg-2 mb-4">
       <div class="subject">
 
-        <a href="maths-notes.html#syllabus"  >
+        <a href="maths-notes.html"  >
 
         <img src="images/notes_icon.png" class="img-fluid">
         <p> Notes</p>
@@ -95,10 +103,8 @@
 
      <div class="col-6 col-md-4 col-lg-2 mb-4">
       <div class="subject">
-        <a href="qanda.html">
         <img src="images/qaans_icon.png" class="img-fluid">
         <p> Important Question and Answers</p>
-        </a>
       </div>
     </div>
 
@@ -106,11 +112,8 @@
 
       <div class="col-6 col-md-4 col-lg-2 mb-4">
       <div class="subject">
-
-        <a href="formulas.html">
         <img src="images/formula_icon.png" class="img-fluid">
         <p> Formula & Symbols </p>
-        </a>
       </div>
     </div>
 
@@ -167,10 +170,8 @@
 
    <div class="col-6 col-md-4 col-lg-2 mb-4">
       <div class="subject">
-        <a href="download.html">
-        <img src="images/download.png" class="img-fluid">
-        <p> Download </p>
-        </a>
+        <img src="images/image_icon_2.png" class="img-fluid">
+        <p>Updating....</p>
       </div>
     </div>
 
@@ -186,14 +187,79 @@
 </section>
 
 
-<header class="text-center my-4">
-  
-  <h4 class="text-primary">Semester I – Networking Communication system </h4>
-</header>
-
 
 <!-- ================= SYLLABUS TABLE ================= -->
+<div class="container mb-4">
+<h4 class="unit-title">UNIT I – Networking Fundamentals and Protocol Models</h4>
+<ul>
+<li>Basics of Storage and Need for Modern Storage</li>
+<li>Data Growth and Digital Transformation</li>
+<li>DAS, NAS, SAN, CAS</li>
+<li>RAID: Types, Levels, Configurations</li>
+<li>Disk Subsystems</li>
+<li>Performance and Reliability Considerations</li>
+<li>Traditional vs Software Defined Storage</li>
+</ul>
+<p><b>Activity:</b> OSI vs TCP/IP Model Mapping Chart with real-world protocol examples</p>
+</div>
 
+
+<!-- UNIT II -->
+<div class="container mb-4">
+<h4 class="unit-title">UNIT II – Data Link and Network Layer Protocols</h4>
+<ul>
+<li>Data Link Layer Services and Design Issues</li>
+<li>Error Detection and Correction</li>
+<li>MAC Protocols: Ethernet, CSMA/CD, CSMA/CA</li>
+<li>Network Layer Functions and IP Routing</li>
+<li>Packet Switching Techniques</li>
+<li>Routing Algorithms: Distance Vector, Link State, OSPF, BGP</li>
+<li>ARP, ICMP, DHCP</li>
+</ul>
+<p><b>Activity:</b> IP Routing Simulation using Packet Tracer</p>
+</div>
+
+
+<!-- UNIT III -->
+<div class="container mb-4">
+<h4 class="unit-title">UNIT III – Transport and Application Layer Protocols</h4>
+<ul>
+<li>Transport Services and Protocol Elements</li>
+<li>UDP and TCP</li>
+<li>DNS, Electronic Mail</li>
+<li>World Wide Web and HTTP</li>
+<li>SNMP, FTP, SMTP</li>
+</ul>
+<p><b>Activity:</b> Demonstration of Transport and Application Layer Protocols</p>
+</div>
+
+
+<!-- UNIT IV -->
+<div class="container mb-4">
+<h4 class="unit-title">UNIT IV – Wireless and Mobile Communication Systems</h4>
+<ul>
+<li>Cellular Networks and Mobile IP</li>
+<li>Wireless LANs and IEEE 802.11</li>
+<li>Bluetooth, ZigBee, NFC</li>
+<li>Mobile Communication Challenges</li>
+<li>MANETs and VANETs</li>
+</ul>
+<p><b>Activity:</b> Bluetooth and ZigBee Network Realization</p>
+</div>
+
+
+<!-- UNIT V -->
+<div class="container mb-4">
+<h4 class="unit-title">UNIT V – Modern Network Trends, IoT, Cloud & Secure Networking</h4>
+<ul>
+<li>Cloud Networking and Virtualization</li>
+<li>IoT Architecture and Protocols (MQTT, CoAP)</li>
+<li>Edge and Fog Computing</li>
+<li>Network Security: Firewalls, Encryption, VPN</li>
+<li>Modern Challenges: 5G, SDN, NFV</li>
+</ul>
+<p><b>Activity:</b> IoT Home Automation Architecture Demonstration</p>
+</div>
 
 <!-- ================= FOOTER ================= -->
 <footer class="text-center py-3 bg-dark text-white">
