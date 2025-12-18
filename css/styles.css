@@ -35,11 +35,13 @@ html {
 /* Show dropdown on hover */
 .navbar .dropdown:hover > .dropdown-menu {
   display: block;
+background-color: #4285f4;
 }
 
 /* Optional: smooth hover */
 .dropdown-menu {
   margin-top: 0;
+  background-color: #4285f4;
 }
 
 
@@ -297,6 +299,10 @@ background-color: #4d3dff !important ;
 box-shadow: 1px 2px 1px 2px grey;
 }
 
+.navbar a{
+      color: #ffffff !important;
+      text-decoration: none;
+}
 
 .align {
 
